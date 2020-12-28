@@ -1,4 +1,9 @@
 #!/bin/bash
+# Halt on errors
+set -e
+
+# Be verbose
+set -x
 
 mkdir -p /qtwk
 cd /qtwk && wget https://github.com/qt/qtwebkit/archive/v5.212.0-alpha4.tar.gz
